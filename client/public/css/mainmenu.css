@@ -1,0 +1,40 @@
+img {
+  display: block;
+  border-radius: 20%;
+      margin-left: auto;
+      margin-right: auto;
+  width: 30%;
+  height: 20%
+  vertical-align: middle;
+}
+#sunset{
+  width: 50%;
+  height: 50%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A9A9A9;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #C0C0C0;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-alighn: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.active {
+  background-color: #ff0000;
+}
+
+#test{
+  color: #ff0000;
+}

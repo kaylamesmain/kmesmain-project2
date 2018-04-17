@@ -1,0 +1,25 @@
+{
+  "name": "edu.marist.221.111.mesmain",
+  "version": "1.0.0",
+  "description": "Project Spring 2018",
+  "main": "oregonTrail.js",
+  "scripts": {
+    "test": "runtests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaristGormanly/kmesmain-project-.git"
+  },
+  "keywords": [
+    "oregon"
+  ],
+  "author": "kayla mesmain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaristGormanly/kmesmain-project-/issues"
+  },
+  "homepage": "https://github.com/MaristGormanly/kmesmain-project-#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

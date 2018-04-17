@@ -1,0 +1,16 @@
+#logo{
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+  width: 30%;
+  height: 20%
+  vertical-align: middle;
+}
+#trail{
+  border-radius: 15%;
+  vertical-align: middle;
+  width: 90%;
+}
+#test{
+  color: #ff0000;
+}

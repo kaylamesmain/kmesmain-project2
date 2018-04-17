@@ -1,0 +1,45 @@
+img {
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+  width: 30%;
+  height: 20%
+  vertical-align: middle;
+}
+h2{
+  color: #9A9494;
+  font-size: 20px;
+  font-family: Times;
+}
+#test{
+  color: #ff0000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #A9A9A9;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    border: 1px solid #FFFFFF;
+}
+li {
+  text-align: left;
+  border-bottom: 1px solid #FFFFFF;
+}
+li a {
+  font-weight: bold;
+    display: block;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+li: child {
+  border-bottom: none;
+}
+li a: hover {
+    background-color: #000000 ;
+    color: #000000;
+}
