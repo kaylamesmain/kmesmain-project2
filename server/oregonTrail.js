@@ -29,16 +29,22 @@ app.use(express.static('client/public'));
 			});
 
 		//routes server 
+		app.route('/api/setup/screen/:id').get(setupController.getgameScreen)
+		app.route('/api/setup/profession').post(setupController.saveProfession);
+		app.route('/api/setup/leader').post(setupController.saveProfession);
+		app.route('/api/setup/memberName').post(setupController.saveMemberName);
+		app.route('/api/setup/startMonth').post(setupController.saveStartMonth);
+		app.route('/api/setup/playerMoney').post(setupController.savePlayerMoney);
 		app.route('/api/game')
 			.get(gameController.getGameData)
-		app.route('/api/setupOccupation')
-			.get(setupController.setOccupation)
+		// app.route('/api/setupOccupation')
+		// 	.get(setupController.setOccupation)
 		app.route('/api/setupStartMonth')
 			.get(setupController.setStartMonth)
 		app.route('/api/setupPace')
 			.get(setupController.setInitialPace)
 		app.route('/api/changePace')
-			.get(gameController.changePace)
+			.post(gameController.changePace)
 		app.route('/api/updateGame')
 			.get(gameController.updateGame)
 		app.route('/api/resetGame')

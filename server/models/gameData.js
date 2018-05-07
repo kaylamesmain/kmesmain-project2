@@ -6,12 +6,14 @@ var terrain = require('./terrain.js');
 function gameData(playerNames) {
 	this.playerNames = playerNames;
 	this.playerStatus = [true, true, true, true, true];
-	this.playerProfession;
+	this.leader="";
+	this.group;
+	this.playerProfession="";
 	this.playerMoney = 500;
-	this.startMonth;
+	this.startMonth="";
 	this.milesTraveled = 0;
 	this.groupHealth = 100;
-	this.currentPace;
+	this.currentPace = pace.getPace("Steady");
 	this.daysOnTrail = 0;
 	this.currentWeather = weather.getRandomWeather();
 	this.currentTerrain = terrain.getRandomTerrain();
@@ -63,8 +65,8 @@ exports.groupHealthStatus = function(health){
  }
 
 //gets all the information in the contract to return game data
-exports.getGameData = function(playerNames, playerProfession, startMonth, currentPace, health){
-	return new gameData(playerNames, playerProfession, startMonth, currentPace, health);
+exports.getGameData = function(playerNames, playerProfession, startMonth, currentPace, health, playerMoney){
+	return new gameData(playerNames, playerProfession, startMonth, currentPace, health, playerMoney);
 }
 
 //changes the pace 

@@ -26,7 +26,8 @@ exports.getGameData = function(req, res) {
 
 //change pace 
 exports.changePace = function(req, res) {
-  gameData.currentPace = pace.getPace(req.query.pace);
+  console.log(req.body.startPace)
+  gameData.currentPace = pace.getPace(req.body.startPace);
   res.setHeader('Content-Type', 'text/plain');
   res.send(gameData);
 }
@@ -78,7 +79,10 @@ exports.setChangePace = function(req, res) {
 exports.setOccupation = function(name){
   gameData.playerProfession = name;
 }
-
+//set leader
+exports.setLeader = function(name){
+  gameData.playerNames[0] = name;
+}
 //start month
 exports.setStartMonth = function(name){
   gameData.startMonth = name;
@@ -87,4 +91,12 @@ exports.setStartMonth = function(name){
 //start pace 
 exports.setStartingPace = function(name){
   gameData.currentPace = (pace.getPace(name))
+}
+
+exports.setPlayerMoney = function(amount){
+  gameData.playerMoney = amount
+}
+
+exports.setLeader = function(name){
+  gameData.leader = name;
 }
